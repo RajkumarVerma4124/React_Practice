@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { FunctionalComponent } from '../../reactprac/src/components/FuntionalComponent';
+import ClassComponent from '../../reactprac/src/components/ClassComponent';
+import Hello from './components/Hello';
+import MovieList from './components/MovieList';
+import HookCounter from './components/HookCounter';
+import HookArray from './components/HookArray';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="flex flex-col w-screen h-full justify-center items-center shadow-lg">
+      {/* <Hello/> */}
+      <MovieList/>
+      {/* <ClassComponent className="Class Component"/> */}
+      {/* <FunctionalComponent /> */}
+      {/* <HookCounter/> */}
+      {/* <HookArray/> */}
+    </div>    
   );
 }
 
